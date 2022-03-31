@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-content {
+    display: flex;
+}
+.news {
+    margin: 1rem;
+}
+
+.news h1 {
+    
+}

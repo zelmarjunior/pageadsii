@@ -1,0 +1,175 @@
+:root {
+  --bg-footer: #f7fbff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--bg-footer);
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  margin: 5px 5px 5px 10px;
+  animation: rotate 3s infinite alternate;
+  animation-delay: 1s;
+  /* opacity: 0; */
+}
+
+.nav {
+  margin-right: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav-icon {
+  width: 25px;
+  margin: 5px 20px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: absolute;
+  top: 200px;
+  width: 550px;
+  height: 200px;
+  background-color: #fff;
+  opacity: 0.5;
+  font-size: 36px;
+  padding: 20px;
+}
+
+.news-content {
+  display: flex;
+  padding: 3%;
+}
+
+.news {
+  padding: 1.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.news:hover {
+  background-color: wheat;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.news img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.news h1 {
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.footer-description {
+  text-align: center;
+  width: 80%;
+  padding: 10px;
+  background: var(--bg-footer);
+  margin: 0;
+  border: solid 0.5px #545454;
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: translateX(0px);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateX(50px);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes hover {
+  from {
+    padding: 0rem ;
+  }
+  to {
+    padding: 0rem ;
+  }
+}
+
+@media (max-width: 768px ) {
+  header{
+    padding: 0 5px;
+  }
+  
+  .nav {
+    margin-right: 0;
+  }
+
+  .description {
+    top: 100px;
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+    padding: 40px 30px 40px 25px;
+  }
+  
+  .news-content {
+    flex-direction: column;
+  }
+
+  .news img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .news h1 {
+    text-align: center;
+    font-size: 34px;
+  }
+
+  .news p {
+    text-align: center;
+  }
+
+  
+
+}
