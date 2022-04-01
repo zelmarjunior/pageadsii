@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: cursive;
+  font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -168,5 +168,7 @@ footer {
 
   .news p {
     text-align: center;
+    padding: 0 80px;
+
   }
 }
