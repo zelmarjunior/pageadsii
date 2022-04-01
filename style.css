@@ -67,13 +67,13 @@ header {
 
 .news {
   padding: 1.5rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .news:hover {
   background-color: wheat;
   border-radius: 10px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: scale(0.9);
   cursor: pointer;
 }
@@ -128,18 +128,18 @@ footer {
 
 @keyframes hover {
   from {
-    padding: 0rem ;
+    padding: 0rem;
   }
   to {
-    padding: 0rem ;
+    padding: 0rem;
   }
 }
 
-@media (max-width: 768px ) {
-  header{
+@media (max-width: 768px) {
+  header {
     padding: 0 5px;
   }
-  
+
   .nav {
     margin-right: 0;
   }
@@ -151,7 +151,7 @@ footer {
     font-size: 16px;
     padding: 40px 30px 40px 25px;
   }
-  
+
   .news-content {
     flex-direction: column;
   }
@@ -169,7 +169,4 @@ footer {
   .news p {
     text-align: center;
   }
-
-  
-
 }
